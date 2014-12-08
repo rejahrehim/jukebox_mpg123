@@ -8,12 +8,12 @@ Startup
 
 ::
 
-    bin/jukebox jukebox_mpg123 --start
+    jukebox jukebox_mpg123 --start
 
 Shutdown
 ==========
 
 ::
 
-    bin/jukebox jukebox_mpg123 --stop
+   jukebox jukebox_mpg123 --stop
 

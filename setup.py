@@ -8,8 +8,7 @@ setup(
     description="mpg123 playback service for jukebox",
     author="Jens Nistler",
     author_email="opensource@jensnistler.de",
-    url="http://jensnistler.de/",
-    download_url='http://github.com/lociii/jukebox_mpg123',
+    download_url='http://github.com/rejahrehim/jukebox_mpg123',
     keywords=["jukebox", "music", "mp3", "playback", "backend", "mpg123"],
     license="MIT",
     classifiers=[

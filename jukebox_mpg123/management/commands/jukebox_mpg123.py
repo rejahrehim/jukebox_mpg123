@@ -93,13 +93,13 @@ class Command(BaseCommand):
             if self.proc is None:
                 song_instance = songs_api.getNextSong()
 
-                if not os.path.exists(song_instance.Filename):
-                    print "File not found: %s" %  song_instance.Filename
+                if not os.path.exists(song_instance.Filename.name):
+                    print "File not found: %s" %  song_instance.Filename.name
                     continue
 
-                print "Playing " + song_instance.Filename
+                print "Playing " + song_instance.Filename.name
                 self.proc = subprocess.Popen(
-                    [self.mpg123, song_instance.Filename]
+                    [self.mpg123, song_instance.Filename.name]
                 )
             else:
                 if not self.proc.poll() is None:
